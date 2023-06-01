@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>GSM Tech - Fazendo conexões mais simples</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cyfer">
+        <meta name="description" content="Fazendo conexões mais simples e ajudando nossos parceiros a alcançar seus objetivos.">
+        <meta name="keywords" content="agronegocio, agro, tecnologia, digital, agrovertical, gsmtech">
+        <link rel="canonical" href="https://gsmtech.com.br/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="icon" type="image/png" href="assets/images/icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container mt-3 d-flex align-items-center justify-content-around flex-md-row flex-column">
+                <a>
+                    <img
+                        src="assets/images/logo.png"
+                        width="180px"
+                        height="auto"
+                        class="img-fluid"
+                        alt="gsm tech logo"
+                    >
+                </a>
+                <div class="buttons d-flex flex-column flex-sm-row">
+                    <div class="contato d-flex justify-content-center align-items-center">
+                        <div>
+                            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <a>+55 11 9 1234-5678</a><br>
+                            <a>Central de Atendimento</a>
+                        </div>
+                    </div>
+                    <div class="btnOne">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-user mr-3" aria-hidden="true"></i>
+                            Portal do Cliente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid navContainer">
+            <div class="container d-flex justify-content-center">
+                <nav class="navbar d-inline-flex">
+                    <a href="#" class="mr-4 py-2">Início</a>
+                    <a href="#" class="mr-4 py-2">Contato</a>
+                    <a href="#" class="mr-4 py-2">Acessar</a>
+                </nav>
+            </div>
+        </div>
+        <section>
+            <div class="container-fluid bg d-flex">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-12 col-md-12 text-center">
+                            <h1>
+                                Fazendo Conexões<br> 
+                                mais simples
+                            </h1>
+                            <p>
+                                Fazendo conexões mais simples e ajudando nossos<br> 
+                                parceiros a alcançar seus objetivos.
+                            </p>
+                            <button class="btnMore">Conhecer Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-5">
+                <div class="row flex-column align-items-center m-5 text-center">
+                    <h2>Entre em Contato</h2>
+                    <p>Preencha nosso formulário e um de nossos especialistas entrará em contato</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <form method="post" action="/send_form.php">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input name="nome" type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input name="email" type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input name="telefone" type="tel" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea name="mensagem" type="textarea" class="form-control" id="mensagem"></textarea>
+                        </div>
+                        <button type="submit" value="Enviar" class="btn btn-primary">Enviar</button>
+                    </form>
+                    <div id="mensagem-sucesso"></div>
+                    <script>
+
+                        //Verifica se a mensagem foi enviada
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const sucesso   = urlParams.get('sucesso');
+
+                        if (sucesso) {
+
+                            const mensagemSucesso = document.getElementById('mensagem-sucesso');
+                            mensagemSucesso.innerHTML = "<h3>Mensagem enviada com sucesso!</h3>";
+                        }
+
+
+                    </script>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright 2023</p>
+        </footer>
+    </body>
+</html>

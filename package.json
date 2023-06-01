@@ -1,0 +1,26 @@
+{
+  "name": "gsm-tech",
+  "version": "1.0.0",
+  "description": "tecnologia digital",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandocyfer/gsmtech.git"
+  },
+  "keywords": [
+    "gsmtech",
+    "agronegocio"
+  ],
+  "author": "cyfer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandocyfer/gsmtech/issues"
+  },
+  "homepage": "https://github.com/fernandocyfer/gsmtech#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

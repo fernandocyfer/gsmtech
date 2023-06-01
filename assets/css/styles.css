@@ -1,0 +1,110 @@
+html, body, h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  font-family: Roboto, sans-serif;
+}
+
+.buttons {
+  gap: 46px;
+}
+.buttons .contato {
+  gap: 16px;
+}
+.buttons .contato :first-child {
+  color: #0079c0;
+}
+.buttons .btnOne {
+  background-color: #0079c0;
+  border-radius: 16px;
+  padding: 6px 12px;
+}
+.buttons a {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.navContainer {
+  height: auto;
+  background-color: #0079c0;
+  margin-top: 22px;
+}
+.navContainer a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 14.4%, rgba(0, 0, 0, 0) 100%), url("../../assets/images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vw;
+  color: #FFFFFF;
+}
+.bg h1 {
+  font-size: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+.bg p {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+.bg .btnMore {
+  background-color: #0079c0;
+  border-radius: 16px;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  border: 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+form, input {
+  width: 360px;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #0079c0;
+  color: #FFFFFF;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .buttons {
+    gap: 12px;
+  }
+  .buttons .contato {
+    margin: 20px 0;
+  }
+  .bg {
+    height: 80vw;
+  }
+  .bg h1 {
+    font-size: 22px;
+  }
+  .bg p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
