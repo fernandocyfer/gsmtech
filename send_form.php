@@ -19,9 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Usa a função mail para fazer o envio
     mail($para, $assunto, $corpo);
 
-
-    echo "<h3>Mensagem enviada com sucesso!</h3>";
-    
+    header('location: index.html?sucesso=true');
+    exit;
 }
 
 ?>

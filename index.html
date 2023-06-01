@@ -104,26 +104,25 @@
                         </div>
                         <button type="submit" value="Enviar" class="btn btn-primary">Enviar</button>
                     </form>
-                    <div id="mensagem-sucesso"></div>
-                    <script>
-
-                        //Verifica se a mensagem foi enviada
-                        const urlParams = new URLSearchParams(window.location.search);
-                        const sucesso   = urlParams.get('sucesso');
-
-                        if (sucesso) {
-
-                            const mensagemSucesso = document.getElementById('mensagem-sucesso');
-                            mensagemSucesso.innerHTML = "<h3>Mensagem enviada com sucesso!</h3>";
-                        }
-
-
-                    </script>
+                    <div class="m-5" id="mensagem-sucesso"></div>
                 </div>
             </div>
         </section>
         <footer>
             <p>Copyright 2023</p>
         </footer>
+        <script>
+
+            //Verifica se a mensagem foi enviada
+            const urlParams = new URLSearchParams(window.location.search);
+            const sucesso   = urlParams.get('sucesso');
+
+            if (sucesso) {
+
+                const mensagemSucesso = document.getElementById('mensagem-sucesso');
+                mensagemSucesso.innerHTML = "<h5>Mensagem enviada com sucesso!</h5>";
+            }
+
+        </script>
     </body>
 </html>
