@@ -3,6 +3,7 @@ $second-color: #0079c0
 $font-stack: Roboto, sans-serif
 $menu-color: #000
 $font-weight-seven: 700
+$color-hover: #dddddd
 
 
 html, body, h1, h2, h3, h4, h5, h6, p, a
@@ -32,7 +33,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, a
     a
         text-transform: uppercase
         color: $primary-color   
-        font-weight: $font-weight-seven 
+        font-weight: $font-weight-seven
+        &:hover
+            color: $color-hover
 
 
 .navContainer
@@ -44,6 +47,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, a
         text-transform: uppercase
         font-weight: $font-weight-seven
         letter-spacing: 2px
+        
+        &:hover
+            color: $color-hover
 
 .bg
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 14.4%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/bg.jpeg')
