@@ -31,7 +31,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, a {
   font-weight: 700;
 }
 .buttons a:hover {
-  color: #dddddd;
+  color: #dddddd !important !important;
 }
 
 .navContainer {
@@ -46,7 +46,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, a {
   letter-spacing: 2px;
 }
 .navContainer a:hover {
-  color: #dddddd;
+  color: #dddddd !important;
 }
 
 .bg {
